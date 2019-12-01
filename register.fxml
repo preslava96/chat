@@ -12,10 +12,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #5987a6;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #5987a6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
    <children>
-      <Button layoutX="129.0" layoutY="470.0" mnemonicParsing="false" style="-fx-background-color: #e8e87d;" text="Create">
+      <Button layoutX="81.0" layoutY="468.0" mnemonicParsing="false" onAction="#Create" style="-fx-background-color: #e8e87d;" text="Create" textAlignment="CENTER">
          <font>
             <Font size="14.0" />
          </font>
@@ -28,12 +27,12 @@
             </RadialGradient>
          </textFill>
       </Button>
-      <TextField layoutX="81.0" layoutY="158.0" promptText="name" style="-fx-background-color: #f4f4d7;" />
-      <TextField layoutX="81.0" layoutY="212.0" promptText="family name" style="-fx-background-color: #f4f4d7;" />
-      <TextField layoutX="81.0" layoutY="261.0" promptText="e-mail" style="-fx-background-color: #f4f4d7;" />
-      <TextField layoutX="81.0" layoutY="312.0" promptText="username" style="-fx-background-color: #f4f4d7;" />
-      <PasswordField layoutX="81.0" layoutY="361.0" promptText="password" style="-fx-background-color: #f4f4d7;" />
-      <PasswordField layoutX="81.0" layoutY="408.0" promptText="confirm password" style="-fx-background-color: #f4f4d7;" />
+      <TextField fx:id="txtName" layoutX="81.0" layoutY="158.0" promptText="name" style="-fx-background-color: #f4f4d7;" />
+      <TextField fx:id="txtFamilyName" layoutX="81.0" layoutY="212.0" promptText="family name" style="-fx-background-color: #f4f4d7;" />
+      <TextField fx:id="txtEmail" layoutX="81.0" layoutY="261.0" promptText="e-mail" style="-fx-background-color: #f4f4d7;" />
+      <TextField fx:id="txtUserName" layoutX="81.0" layoutY="312.0" promptText="username" style="-fx-background-color: #f4f4d7;" />
+      <PasswordField fx:id="txtPass" layoutX="81.0" layoutY="361.0" promptText="password" style="-fx-background-color: #f4f4d7;" />
+      <PasswordField fx:id="txtConfPass" layoutX="81.0" layoutY="408.0" promptText="confirm password" style="-fx-background-color: #f4f4d7;" />
       <Label layoutX="81.0" layoutY="74.0" text="Register">
          <textFill>
             <LinearGradient endX="0.3854962050459767" endY="0.9847328253374755" startX="0.4083969301849831" startY="0.5954198254883745">
@@ -52,5 +51,18 @@
             <Image url="@../../maxresdefault.jpg" />
          </image>
       </ImageView>
+      <Button layoutX="178.0" layoutY="468.0" mnemonicParsing="false" onAction="#Return" prefHeight="30.0" prefWidth="61.0" style="-fx-background-color: #e8e87d;" text="Return" textAlignment="CENTER">
+         <textFill>
+            <RadialGradient centerX="0.7355555640326605" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop color="#3709cd" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
